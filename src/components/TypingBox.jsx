@@ -17,7 +17,7 @@ const TypingBox = ({ text, strictMode }) => {
       const words = input.trim().split(/\s+/).length;
       const cps = Math.round(input.length / ((Date.now() - startTime) / 1000));
       const wpm = Math.round(words / elapsedMinutes);
-      setSpeed(cps); // update WPM below if preferred
+      setSpeed(cps);
 
       let correct = 0;
       for (let i = 0; i < input.length; i++) {
@@ -40,13 +40,14 @@ const TypingBox = ({ text, strictMode }) => {
   const timer = startTime ? `${Math.floor((Date.now() - startTime) / 1000)}s` : '0s';
 
   return (
-    <>
+    <div className="typing-box-container">
       <textarea
         ref={inputRef}
         rows="4"
         placeholder="Start Typing..."
         value={input}
         onChange={handleChange}
+        className="typing-input"
       />
       <div className="stats">
         <div><strong>Speed</strong><br />{speed} <span className="sub">CPS</span></div>
@@ -56,7 +57,7 @@ const TypingBox = ({ text, strictMode }) => {
       <div className="time-btn">
         <button className="btn time">🕒 Time: {timer}</button>
       </div>
-    </>
+    </div>
   );
 };
 
