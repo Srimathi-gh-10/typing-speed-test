@@ -1,0 +1,112 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* Slate-900 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  background-color: #1e293b; /* Slightly lighter slate */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #facc15; /* Amber-400 */
+}
+
+.text-box {
+  background-color: #0f172a;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  font-size: 1rem;
+  color: #e2e8f0; /* slate-100 */
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f1f5f9; /* Light background */
+  color: #1e293b; /* Text color */
+  resize: none;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  background-color: #334155;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.stats div {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.stats strong {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #f8fafc;
+}
+
+.sub {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.time-btn {
+  margin-top: 1rem;
+}
+
+.time-btn .btn.time {
+  background-color: #22c55e; /* green-500 */
+}
+
+.time-btn .btn.time:hover {
+  background-color: #16a34a; /* green-600 */
+}
